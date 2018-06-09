@@ -109,7 +109,7 @@ let MnemonicProvider = function(mnemonic, provider_url, address_index=0, num_add
 };
 
 WalletProvider.prototype.sendAsync = function() {
-  this.engine.sendAsync.apply(this.engine, arguments);
+  engine.sendAsync.apply(engine, arguments);
 };
 
 WalletProvider.prototype.send = function() {
