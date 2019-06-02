@@ -25,7 +25,7 @@ let LedgerProvider = function(network_id, account_number, provider_url) {
   });
   engine.addProvider(ledger);
   engine.addProvider(new FiltersSubprovider());
-  engine.addProvider(new Web3Subprovider(new Web3.providers.RpcProvider(rpcUrl:provider_url)));
+  engine.addProvider(new ProviderSubprovider(new Web3.providers.HttpProvider(provider_url)))
   engine.start();
   return engine;
 
