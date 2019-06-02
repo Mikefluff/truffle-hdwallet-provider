@@ -235,3 +235,4 @@ module.exports.TrezorProvider = TrezorProvider;
 module.exports.WalletProvider = WalletProvider;
 module.exports.TrezorProvider = TrezorProvider;
 module.exports.LedgerProvider = LedgerProvider;
+module.exports.PrivateKeyProvider = PrivateKeyProvider;
