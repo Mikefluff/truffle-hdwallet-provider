@@ -118,7 +118,7 @@ let PrivateKeyProvider = function (privateKeys, providerUrl) {
 
   // from https://github.com/trufflesuite/truffle-hdwallet-provider/pull/25/commits
   for (let key of privateKeys) {
-    var wallet = ethereumjsWallet.fromPrivateKey(new Buffer(key, "hex"));
+    var wallet = Wallet.fromPrivateKey(new Buffer(key, "hex"));
     var addr = '0x' + wallet.getAddress().toString('hex');
     this.addresses.push(addr);
     this.wallets[addr] = wallet;
