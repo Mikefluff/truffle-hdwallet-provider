@@ -163,7 +163,7 @@ let PrivateKeyProvider = function (privateKeys, providerUrl) {
 }
 
 WalletProvider.prototype.sendAsync = function() {
-  this.engine.sendAsync.apply(this.engine, arguments);
+  engine.sendAsync.apply(engine, arguments);
 };
 
 WalletProvider.prototype.send = function() {
